@@ -9,14 +9,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
-        <nav class="grey darken-4">
-            <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Amortização</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="tabela-price.jsp">Tabela Price</a></li>
-            <li><a href="amortizacao-americana.jsp">Amortização Americana</a></li>
-            <li><a href="amortizacao-constante.jsp">Amortização Constante</a></li>
-            </ul>
-            </div>
-        </nav>
-        <div class="container-fluid">
+        <header>
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <a href="home.jsp" class="brand-logo"><i class="large material-icons">account_balance</i>Amortização</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="tabela-price.jsp"><i class="large material-icons left">local_atm</i>Tabela Price</a></li>
+                    <li><a href="amortizacao-americana.jsp"><i class="large material-icons left">account_balance_wallet</i>Amortização Americana</a></li>
+                    <li><a href="amortizacao-constante.jsp"><i class="large material-icons left">credit_card</i>Amortização Constante</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+        <div class="container col s12">
