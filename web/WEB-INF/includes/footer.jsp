@@ -1,3 +1,4 @@
+            </div>
         </div>
         <footer class="grey darken-4 page-footer">
           <div class="container">
@@ -7,7 +8,7 @@
                 <p class="grey-text text-lighten-4">3 tipos de calculos.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Cálculos</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="tabela-price.jsp">Tabela Price</a></li>
                   <li><a class="grey-text text-lighten-3" href="amortizacao-americana.jsp">Amortização Americana</a></li>
