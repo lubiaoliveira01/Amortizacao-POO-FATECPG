@@ -85,7 +85,7 @@
                     <td><strong>Total:</strong> </td>
                     <td><strong> R$ <%= nf.format((juros * numParcelas) + valorFinanciado) %></strong> </td>
                     <td><strong> R$ <%= nf.format(amortizacao) %></strong> </td>
-                    <td><strong> R$ <%= nf.format(juros) %></strong> </td>
+                    <td><strong> R$ <%= nf.format(juros* numParcelas) %></strong> </td>
                     <td><strong> R$ 0</strong> </td>
                 </tr>
             </tbody>     
