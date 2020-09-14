@@ -26,4 +26,13 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
+    <style>
+        footer {
+            /*deixa o texto no fim da página*/
+            position: fixed;
+            bottom: 0;   
+            width: 100%;
+        }
+
+    </style>
 </html>
