@@ -24,7 +24,13 @@
         main {
           flex: 1 0 auto;
         }
-        
+        #logo{
+
+            padding-left: 25px;
+        }
+        #tagP{
+            padding-right: 100px;
+        }
   
     </style>
     </head>
@@ -32,11 +38,16 @@
         <header>
             <nav class="grey darken-4">
                 <div class="nav-wrapper">
-                    <a href="home.jsp" class="brand-logo"><i class="large material-icons">account_balance</i>Amortização</a>
+                    <a id="logo" href="home.jsp" class="brand-logo">
+                        <i class="large material-icons">account_balance</i>
+                        Amortização
+                    </a>
+                    
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="tabela-price.jsp"><i class="large material-icons left">local_atm</i>Tabela Price</a></li>
-                    <li><a href="amortizacao-americana.jsp"><i class="large material-icons left">account_balance_wallet</i>Amortização Americana</a></li>
-                    <li><a href="amortizacao-constante.jsp"><i class="large material-icons left">credit_card</i>Amortização Constante</a></li>
+                        <li ><i id="tagP">#BlackLivesMatter</i></li>
+                        <li><a href="tabela-price.jsp"><i class="large material-icons left">local_atm</i>Tabela Price</a></li>
+                        <li><a href="amortizacao-americana.jsp"><i class="large material-icons left">account_balance_wallet</i>Amortização Americana</a></li>
+                        <li><a href="amortizacao-constante.jsp"><i class="large material-icons left">credit_card</i>Amortização Constante</a></li>
                     </ul>
                 </div>
             </nav>

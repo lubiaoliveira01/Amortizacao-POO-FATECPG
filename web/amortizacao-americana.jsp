@@ -1,6 +1,8 @@
 <%@include file='WEB-INF/includes/header.jsp' %>
 <%@page import="java.util.Objects" %>
 <%@page import="utels.CalculosUteis" %>
+<%@page import="java.util.Locale"%>
+<%@page import="java.text.NumberFormat"%>
 
 
         <h1>Amortização Americana</h1>
@@ -37,6 +39,9 @@
             }catch(Exception ex){
                 requestEx = ex; 
             }
+            
+            Locale l = new Locale("pt","BR");
+            NumberFormat nf = NumberFormat.getInstance(l);
         %>
         
         <% if (request.getParameter("valorFinanciado") == null){%>
@@ -70,18 +75,18 @@
                 %>
                     <tr> 
                         <td> <%= i %> </td>
-                        <td> R$ <%= prestacao %> </td>
-                        <td> R$ <%= amortizacao %> </td>
-                        <td> R$ <%= juros %> </td>
-                        <td>R$ <%= saldoDevedor %> </td>
+                        <td> R$ <%= nf.format(prestacao) %> </td>
+                        <td> R$ <%= nf.format(amortizacao) %> </td>
+                        <td> R$ <%= nf.format(juros) %> </td>
+                        <td> R$ <%= nf.format(saldoDevedor) %> </td>
                     </tr>
                 <% } %>
                 <tr>
-                    <td> <strong>Total:</strong> </td>
-                    <td><strong> R$  <%= (juros * numParcelas) + valorFinanciado %></strong> </td>
-                    <td><strong> R$ <%= amortizacao %></strong> </td>
-                    <td><strong> R$ <%= juros %></strong> </td>
-                    <td><strong>R$ 0</strong> </td>
+                    <td><strong>Total:</strong> </td>
+                    <td><strong> R$ <%= nf.format((juros * numParcelas) + valorFinanciado) %></strong> </td>
+                    <td><strong> R$ <%= nf.format(amortizacao) %></strong> </td>
+                    <td><strong> R$ <%= nf.format(juros) %></strong> </td>
+                    <td><strong> R$ 0</strong> </td>
                 </tr>
             </tbody>     
         </table>

@@ -37,7 +37,7 @@
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s3">
-                    <input placeholder="175000" id="valorFinanciado" name="valorFinanciado" type="text" class="validate">
+                    <input placeholder="175000.00" id="valorFinanciado" name="valorFinanciado" type="text" class="validate">
                     <label for="valorF">Valor Financiado</label>
                 </div>
                 <div class="input-field col s3">
@@ -45,7 +45,7 @@
                     <label for="meses">Número de meses</label>
                 </div>
                 <div class="input-field col s3">
-                    <input placeholder="0.75" id="taxaJuros" name="taxaJuros" type="text" class="validate">
+                    <input placeholder="1.5" id="taxaJuros" name="taxaJuros" type="text" class="validate">
                     <label for="taxa">Taxa de Juros (%)</label>
                 </div>
                 <div class="input-field col s3">
@@ -94,16 +94,16 @@
                                 <%= i+1%>
                             </td>
                             <td>
-                                <%= nf.format(parcela)%>
+                                R$ <%= nf.format(parcela)%>
                             </td>
                             <td>
-                                <%= nf.format(amortizacao)%>
+                                R$ <%= nf.format(amortizacao)%>
                             </td>
                             <td>
-                                <%= nf.format(juros)%>
+                                R$ <%= nf.format(juros)%>
                             </td>
                             <td>
-                                <%= nf.format(saldoDev)%>
+                                R$ <%= nf.format(saldoDev)%>
                             </td>
                         </tr>
                         <%

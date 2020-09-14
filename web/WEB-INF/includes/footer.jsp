@@ -5,7 +5,7 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Projeto de Amortização</h5>
-                <p class="grey-text text-lighten-4">3 tipos de calculos.</p>
+                <p class="grey-text text-lighten-4">3 tipos de cálculos.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Cálculos</h5>
@@ -19,7 +19,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © Matheus Gonçalves, Lúbia Oliveira e Isabela Melim
+            © Isabela Melim, Lúbia Oliveira e Matheus Gonçalves 
             </div>
           </div>
         </footer>
