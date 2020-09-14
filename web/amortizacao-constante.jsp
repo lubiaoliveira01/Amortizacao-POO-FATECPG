@@ -25,24 +25,23 @@
             NumberFormat nf = NumberFormat.getInstance(l);  
         %>
 
-        <div class="col s12">
         <h1>Constante</h1>
         <form class="col s12">
             <div class="row">
             <div class="input-field col s3">
-                <input placeholder="0.75" id="taxa" name="taxa" type="text" class="validate">
+                <input placeholder="1.5" id="taxa" name="taxa" type="text" class="validate">
                 <label for="taxa">Taxa de Juros</label>
             </div>
             <div class="input-field col s3">
-                <input placeholder="175000" id="valorF" name="valorFinanciado" type="text" class="validate">
+                <input placeholder="175000.00" id="valorF" name="valorFinanciado" type="text" class="validate">
                 <label for="valorF">Valor Financiado</label>
             </div>
             <div class="input-field col s3">
-                <input placeholder="5" id="meses" name="numParcela" type="number" class="validate">
+                <input placeholder="5" id="meses" min='1' name="numParcela" type="number" class="validate">
                 <label for="meses">Meses</label>
             </div>
             <div class="input-field col s3">
-                <button type="submit"><a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Simular</a></button>
+                <button type="submit"><a class="amber lighten-1 waves-effect waves-light btn"><i class="material-icons right">cloud</i>Simular</a></button>
             </div>
             </div>
         </form>
