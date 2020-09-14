@@ -13,6 +13,7 @@
         
         double[] total = {0,0,0};
         
+        
         double valorFinanciado = 0.0, taxaJuros = 0.0,
                parcela, juros, saldoDev, amortizacao;
         
@@ -87,7 +88,7 @@
                             for(int i =0; i<numMeses; i++){
                                 juros = saldoDev*taxaJuros;
                                 amortizacao = parcela - juros;
-  
+                                saldoDev = CalculosUteis.calculaSaldoDevedor(amortizacao, saldoDev);
                         %>
                         <tr>
                             <td>
@@ -111,7 +112,7 @@
                             total[1] += amortizacao;
                             total[2] += juros;
                             
-                            saldoDev = CalculosUteis.calculaSaldoDevedor(amortizacao, saldoDev);
+                            
                             }
                         %>
                         <tr>
