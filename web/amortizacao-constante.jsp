@@ -25,28 +25,29 @@
             NumberFormat nf = NumberFormat.getInstance(l);  
         %>
 
-        <h1>Constante</h1>
+        <h1>Amortização Constante</h1>
         <form class="col s12">
             <div class="row">
-            <div class="input-field col s3">
-                <input placeholder="1.5" id="taxa" name="taxa" type="text" class="validate">
-                <label for="taxa">Taxa de Juros</label>
-            </div>
             <div class="input-field col s3">
                 <input placeholder="175000.00" id="valorF" name="valorFinanciado" type="text" class="validate">
                 <label for="valorF">Valor Financiado</label>
             </div>
             <div class="input-field col s3">
                 <input placeholder="5" id="meses" min='1' name="numParcela" type="number" class="validate">
-                <label for="meses">Meses</label>
+                <label for="meses">Número de Meses</label>
             </div>
             <div class="input-field col s3">
-                <button type="submit"><a class="amber lighten-1 waves-effect waves-light btn"><i class="material-icons right">cloud</i>Simular</a></button>
+                <input placeholder="1.5" id="taxa" name="taxa" type="text" class="validate">
+                <label for="taxa">Taxa de Juros</label>
+            </div>
+            
+            <div class="input-field col s3">
+                <button type="submit"><a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Simular</a></button>
             </div>
             </div>
         </form>
         <%if(!Objects.isNull(err)){  %>
-            <p>Insira informações válida...</p>
+            <p>Valores não informados</p>
         <%}else{ %>
             <table class="stripped">
             <thead>

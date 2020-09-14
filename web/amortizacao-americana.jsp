@@ -3,7 +3,7 @@
 <%@page import="utels.CalculosUteis" %>
 
 
-        <h1>Amortização americana</h1>
+        <h1>Amortização Americana</h1>
         <form class="col s12">
             <div class="row">
             <div class="input-field col s3">
@@ -11,14 +11,14 @@
                 <label for="valorF">Valor Financiado</label>
             </div>
             <div class="input-field col s3">
+                <input placeholder="5" id="meses" name="numParcelas" type="number" min="1" class="validate">
+                <label for="meses">Número de Meses</label>
+            </div>
+            <div class="input-field col s3">
                 <input placeholder="1.5" id="taxa" name="juros" type="text" class="validate">
-                <label for="taxa">Taxa de Juros</label>
+                <label for="taxa">Taxa de Juros (%)</label>
             </div>
             
-            <div class="input-field col s3">
-                <input placeholder="5" id="meses" name="numParcelas" type="number" min="1" class="validate">
-                <label for="meses">Meses</label>
-            </div>
             <div class="input-field col s3">
                 <button type="submit"><a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Simular</a></button>
             </div>
@@ -40,10 +40,10 @@
         %>
         
         <% if (request.getParameter("valorFinanciado") == null){%>
-        <p> Campo vazio. Digite um valor.</p>
+        <p> Valores não informados.</p>
         <%}
         else if(requestEx != null){ %>
-        <p> Valor inválido. Digite apenas números.</p>
+        <p> Valor inválido.</p>
         <% }else{ %>
         <table>
             <thead>

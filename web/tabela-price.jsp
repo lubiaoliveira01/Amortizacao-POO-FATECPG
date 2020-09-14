@@ -5,7 +5,6 @@
 <%@page import="utels.CalculosUteis"%>
 
 <%@include file='WEB-INF/includes/header.jsp' %>
-    <h1>TABELA-PRICE</h1>
 
     <%
         Exception reqException = null;
